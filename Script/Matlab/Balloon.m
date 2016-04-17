@@ -22,6 +22,8 @@ while inkey1~=0
     fprintf('1- Given geometric desired altitude and mass calculates balloon equivalent radii and Helium mass at lower burts point, input \n')
     fprintf('2- Given burst radii, mass calculates burst altitude\n')
     fprintf('3- Probe mass, air and helium density calculates minimum balloon burst radii \n')
+    fprintf('------------------------------------------------------------\n')
+    fprintf('4- Calculates descent rate for given altitude, mass, diameter, cdd and \n')
     inkey1=input('Select calculation mode, 0 to exit : ');
 switch inkey1
     case 1
@@ -79,6 +81,16 @@ switch inkey1
         vz=(8*RG*g/3/cD*(1-3*(mto+me)/(4*pi()*1.225*RG^3)))^0.5;
         fprintf('Volume of the Balloon at ground %.2f [m^3], Radius of the balloon at ground %.2f [m], Free lift at ground [N] %.3f \n',VG,RG,FFL);  
         fprintf('Ascent speed %.2f [m/s] \n\n',vz);  
+    case 4
+         %% Calculates descent rate at given altitude
+         mt=input('Total weight of probe [kg]: ');
+         ddp=input('Diameter of parachute [m]: ');
+         cddu=input('Parachute coefficient of drag :');
+         h=input('Altitude [m]: ');
+         [T p RhoAir]=ISAatm(h);
+         areaparachute=(ddp/2)^2*pi();
+         vf=(2*mt*g/(cddu*RhoAir*areaparachute))^0.5;
+         fprintf('Still Air Descent Rate %.2f [m/s] \n\n',vf);  
 end
 end
 
