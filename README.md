@@ -6,7 +6,7 @@ This repo is in a primordial stage. Material regarding Weather Balloons design a
 [What is BasicAirData?](https://goo.gl/wiVi11)
 
 
-[Click here for License and general info](https://github.com/BasicAirData/Document-Templates/general-info.md.md)ff
+[Click here for License and general info](https://github.com/BasicAirData/Document-Templates/general-info.md)
 
 ##License##
 BasicAirData provides free software licensed under [GNU GPL v3.0](http://www.gnu.org/licenses/gpl-3.0.txt) General Public License
