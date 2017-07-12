@@ -10,4 +10,4 @@ This repo is in a primordial stage. Material regarding Weather Balloons design a
 
 [Contributing Information](CONTRIBUTING.md)
 
-[Genearal Repository License](LICENSE)
+[Repository License](LICENSE)
