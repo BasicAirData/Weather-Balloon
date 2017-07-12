@@ -4,5 +4,10 @@ This repo is in a primordial stage. Material regarding Weather Balloons design a
 
 [BasicAirData](http://www.basicairdata.eu) Open and free DIY air data instrumentation and telemetry
 
-##License and General Information
-[License and general info](https://github.com/BasicAirData/Document-Templates/blob/master/general-info.md)
+## Reference documents
+
+[Code of conduct](CODE_OF_CONDUCT.md)
+
+[Contributing Information](CONTRIBUTING.md)
+
+[Genearal Repository License](LICENSE)
